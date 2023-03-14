@@ -31,3 +31,16 @@ git clone https://github.com/codingforentrepreneurs/iac-python
 - Make changes to instance config and re-run plan, apply and destroy
 
 
+### Screenshots
+
+
+
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/2639639/225081527-59381b94-8abf-4ad2-aee7-14396694ae4c.png">
+
+![image](https://user-images.githubusercontent.com/2639639/225081627-5221d4f9-997f-4fb9-b4b2-642c30eee8d2.png)
+
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/2639639/225082381-aa84a382-77df-4066-a466-9b2b2e37984a.png">
+
+
+
+
