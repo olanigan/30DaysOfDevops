@@ -28,3 +28,27 @@ backend "s3" {
 * Initialize configured backend
 
 <img width="563" alt="image" src="https://user-images.githubusercontent.com/2639639/225198019-144a5238-87d8-414b-89de-a767aa9ca84f.png">
+
+
+### Install Docker on Linode instance
+
+* Add provisioner in `linode-instance` definition
+```
+provisioner "remote-exec" {
+        connection {
+            host = "${self.ip_address}"
+            type = "ssh"
+            user = "root"
+            password = "${var.root_user_pw}"
+        }
+
+        inline = [
+            "sudo apt-get update",
+            "curl -fsSL https://get.docker.com -o get-docker.sh",
+            "sudo sh get-docker.sh"
+        ]
+    }
+```
+* Run `terraform apply -auto-approve`
+* Login to Shell and validate Docker installation with `docker ps`
+
